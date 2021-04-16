@@ -2,12 +2,7 @@
 <html>
   <body>
     <h1>Today</h1>
-    <% T = Time.now 
-       dotw = T.strftime 
-       month = T.month
-       day = T.day
-       year = T.year
-       
-       today = "The date is"
+    <% today = Time.now.strftime("The date is %A, %B %d, %Y") %>
+    <p><%= today %></p>
   </body>
 </html>
